@@ -1,0 +1,26 @@
+{
+  "name": "mypgseqproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mic": "npx sequelize-mig migration:make -n",
+    "mip": "npx sequelize-mig migration:make --preview",
+    "miu": "npx sequelize-cli db:seed:undo",
+    "mi": "npx sequelize-cli db:migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "file": "^0.2.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.32.0",
+    "sequelize-cli": "^6.6.1",
+    "sequelize-migration-wrapper": "github:sacredneobi/sequelize-migration-wrapper"
+  }
+}
