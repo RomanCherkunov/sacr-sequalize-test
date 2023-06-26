@@ -32,10 +32,7 @@ const post = async (req, res) => {
     console.log({caption: req.body.caption,
         description: req.body.description})
     const createdUser = await user.create(req.body).then(data => {
-        res.send(data).catch(err => {
-            console.log(err)
-            res.status(500).send(err)
-        })
+        res.send(data)
     })
 }
 

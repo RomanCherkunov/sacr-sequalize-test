@@ -1,4 +1,4 @@
-GET http://localhost:8989/user?search=sf
+GET http://localhost:8989/user
 
 ###
 
@@ -6,6 +6,6 @@ POST http://localhost:8989/user
 content-type: application/json
 
 {
-    "caption": "test",
-    "description": "test"
+    "caption": "test2",
+    "description": "test2"
 }
