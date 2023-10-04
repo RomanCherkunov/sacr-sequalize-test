@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "mic": "npx sequelize-mig migration:make -n",
     "mip": "npx sequelize-mig migration:make --preview",
-    "miu": "npx sequelize-cli db:seed:undo",
+    "miu": "npx sequelize-cli db:migrate:undo",
+    "miua": "npx sequelize-cli db:migrate:undo:all",
     "mi": "npx sequelize-cli db:migrate"
   },
   "author": "",

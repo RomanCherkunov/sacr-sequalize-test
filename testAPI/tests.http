@@ -6,6 +6,17 @@ POST http://localhost:8989/user
 content-type: application/json
 
 {
-    "caption": "test2",
-    "description": "test2"
+    "caption": "Nastya",
+    "description": "new user Nastya"
+}
+
+###
+
+PUT http://localhost:8989/user
+content-type: application/json
+
+{
+    "id": 5,
+    "caption": "Nastya updated",
+    "description": "new user Nastya"
 }

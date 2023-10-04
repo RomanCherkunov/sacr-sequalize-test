@@ -5,5 +5,5 @@ Op.getLike = function () {
     if(configDB.development.dialect === 'postgres') {
         return this.iLike
     }
-    return this.like
+    return this.Like
 }
